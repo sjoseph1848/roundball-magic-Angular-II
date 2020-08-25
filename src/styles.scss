@@ -45,6 +45,15 @@ a {
   text-decoration: none;
 }
 
+button {
+  padding: 2rem 6rem;
+  background: white;
+  border: none;
+  color: #232323;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
 /* Media Queries */
 @media screen and (max-width: 932px) {
   html {

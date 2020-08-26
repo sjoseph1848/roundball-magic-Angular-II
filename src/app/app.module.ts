@@ -9,6 +9,7 @@ import { GamesComponent } from './pages/games/games.component';
 import { NewsComponent } from './pages/news/news.component';
 import { StatsComponent } from './pages/stats/stats.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeroComponent } from './components/hero/hero.component';
     GamesComponent,
     NewsComponent,
     StatsComponent,
-    HeroComponent
+    HeroComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

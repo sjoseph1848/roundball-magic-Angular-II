@@ -35,14 +35,15 @@
 }
 
 .moving-ball {
+  height: 20%;
   animation: ballAnimation 3s infinite alternate ease-in-out;
 }
 
 @keyframes ballAnimation {
   from {
-    transform: translate(100%, -10%);
+    transform: translate(50vw, -10vh);
   }
   to {
-    transform: translate(10%, 0%);
+    transform: translate(-300%, 80%);
   }
 }

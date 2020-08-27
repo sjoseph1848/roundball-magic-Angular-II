@@ -41,9 +41,9 @@
 
 @keyframes ballAnimation {
   from {
-    transform: translate(100%, -10%);
+    transform: translate(100%, -10%) rotate(0);
   }
   to {
-    transform: translate(-280%, 130%);
+    transform: translate(-280%, 130%) rotate(360deg);
   }
 }

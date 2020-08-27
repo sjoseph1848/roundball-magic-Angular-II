@@ -1,7 +1,7 @@
 #details {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url("../../../assets/imgs/hoop.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url("../../../assets/imgs/hoop_snow.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -41,9 +41,9 @@
 
 @keyframes ballAnimation {
   from {
-    transform: translate(50vw, -10vh);
+    transform: translate(100%, -10%);
   }
   to {
-    transform: translate(-300%, 80%);
+    transform: translate(-280%, 130%);
   }
 }

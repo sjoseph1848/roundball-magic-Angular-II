@@ -13,14 +13,25 @@
         <img [src]="game.vTeam.logo" alt="" />
       </div>
       <ul>
-        <li>{{ game.hTeam.nickName }}: {{ game.hTeam.score.points }}</li>
-        <li>{{ game.vTeam.nickName }}: {{ game.vTeam.score.points }}</li>
+        <!-- Need to refactor this section, still thinking abou scenario so lot of ifs for now -->
+        <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
+          {{ game.hTeam.nickName }}: {{ game.hTeam.score.points }}
+        </li>
+        <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
+          {{ game.vTeam.nickName }}: {{ game.vTeam.score.points }}
+        </li>
         <li *ngIf="game.halftime === '1'">Half Time</li>
         <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
           Quarter: {{ game.currentPeriod | slice: 0:1 }}
         </li>
         <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
           Time Remaining: {{ game.clock }}
+        </li>
+        <li
+          class="card-icon-li-coming"
+          *ngIf="game.currentPeriod.charAt(0) === '0'"
+        >
+          Coming Up!
         </li>
       </ul>
     </div>

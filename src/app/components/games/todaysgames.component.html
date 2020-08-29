@@ -1,0 +1,28 @@
+<!-- <ul *ngFor="let game of games">
+    <li>{{ game | json }}</li>
+  </ul> -->
+
+<section id="game" class="games">
+  <header class="game-head">
+    <h2>Today's Games</h2>
+  </header>
+  <div class="cards" *ngIf="games$ | async as games">
+    <div class="card" *ngFor="let game of games">
+      <div class="card-icon">
+        <img [src]="game.hTeam.logo" alt="" />
+        <img [src]="game.vTeam.logo" alt="" />
+      </div>
+      <ul>
+        <li>{{ game.hTeam.nickName }}: {{ game.hTeam.score.points }}</li>
+        <li>{{ game.vTeam.nickName }}: {{ game.vTeam.score.points }}</li>
+        <li *ngIf="game.halftime === '1'">Half Time</li>
+        <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
+          Quarter: {{ game.currentPeriod | slice: 0:1 }}
+        </li>
+        <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
+          Time Remaining: {{ game.clock }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

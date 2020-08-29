@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -10,7 +10,7 @@ import { NewsComponent } from './pages/news/news.component';
 import { StatsComponent } from './pages/stats/stats.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { DetailsComponent } from './components/details/details.component';
-
+import { TodaysGamesComponent } from './components/games/todaysgames.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +20,13 @@ import { DetailsComponent } from './components/details/details.component';
     NewsComponent,
     StatsComponent,
     HeroComponent,
-    DetailsComponent
+    DetailsComponent,
+    TodaysGamesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

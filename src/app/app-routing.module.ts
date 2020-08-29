@@ -8,8 +8,7 @@ import { GamesComponent } from './pages/games/games.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'stats', component: StatsComponent },
-  { path: 'news', component: NewsComponent },
-  { path: 'games', component: GamesComponent }
+  { path: 'news', component: NewsComponent }
 ];
 
 @NgModule({

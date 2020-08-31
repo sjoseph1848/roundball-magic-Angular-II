@@ -1,0 +1,14 @@
+<section id="news-today" class="news">
+  <header class="news-head">
+    <h2>What's Happening</h2>
+  </header>
+  <div class="cards" *ngIf="news$ | async as news">
+    <div class="card" *ngFor="let article of news">
+      <div class="card-icon">
+        <img [src]="article.urlToImage" alt="" />
+      </div>
+      <h4>{{ article.title }}</h4>
+      <a [href]="article.url" target="_blank" class="card-button">Read</a>
+    </div>
+  </div>
+</section>

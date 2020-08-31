@@ -1,4 +1,4 @@
-.game-head {
+.news-head {
   background: #232323;
   padding: 3rem;
   min-height: 30vh;
@@ -26,7 +26,8 @@
 }
 
 .cards img {
-  max-width: 15%;
+  max-width: 55%;
+  max-height: 65%;
   margin: 2rem;
 }
 
@@ -57,6 +58,14 @@ li {
 
 .card-icon-li-coming {
   align-self: center;
+}
+
+.card-button {
+  margin: 5rem;
+  font-size: 3.6rem;
+  color: black;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 932px) {

@@ -11,6 +11,8 @@ import { StatsComponent } from './pages/stats/stats.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { DetailsComponent } from './components/details/details.component';
 import { TodaysGamesComponent } from './components/games/todaysgames.component';
+import { NewsHeadlineComponent } from './components/news-headline/news-headline.component';
+import { NewsSectionComponent } from './components/news-section/news-section.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,9 @@ import { TodaysGamesComponent } from './components/games/todaysgames.component';
     StatsComponent,
     HeroComponent,
     DetailsComponent,
-    TodaysGamesComponent
+    TodaysGamesComponent,
+    NewsHeadlineComponent,
+    NewsSectionComponent
   ],
   imports: [
     BrowserModule,

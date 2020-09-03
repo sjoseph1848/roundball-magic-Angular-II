@@ -13,6 +13,7 @@ import { DetailsComponent } from './components/details/details.component';
 import { TodaysGamesComponent } from './components/games/todaysgames.component';
 import { NewsHeadlineComponent } from './components/news-headline/news-headline.component';
 import { NewsSectionComponent } from './components/news-section/news-section.component';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { NewsSectionComponent } from './components/news-section/news-section.com
     DetailsComponent,
     TodaysGamesComponent,
     NewsHeadlineComponent,
-    NewsSectionComponent
+    NewsSectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -21,7 +21,7 @@
           Quarter: {{ game.currentPeriod | slice: 0:1 }}
         </li>
         <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
-          Time Remaining: {{ game.clock }}
+          Time: {{ game.clock }}
         </li>
         <li
           class="card-icon-li-coming"

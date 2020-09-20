@@ -1,5 +1,13 @@
 <section id="game" class="games">
-  <header class="game-head">
+  <div class="cards" *ngIf="games$ | async as games">
+    <div class="card" *ngFor="let game of games">
+      <span class="card-imgs">
+        <img [src]="game.hTeam.logo" alt="" />
+        <img [src]="game.vTeam.logo" alt="" />
+      </span>
+    </div>
+  </div>
+  <!-- <header class="game-head">
     <h2>Today's Games</h2>
   </header>
   <div class="cards" *ngIf="games$ | async as games">
@@ -9,7 +17,7 @@
         <img [src]="game.vTeam.logo" alt="" />
       </div>
       <ul>
-        <!-- Need to refactor this section, still thinking abou scenario so lot of ifs for now -->
+       
         <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
           {{ game.hTeam.nickName }}: {{ game.hTeam.score.points }}
         </li>
@@ -31,5 +39,5 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
 </section>

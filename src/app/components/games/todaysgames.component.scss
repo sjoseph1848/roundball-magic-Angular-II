@@ -35,28 +35,47 @@
   padding: 1rem;
 }
 
-.card-icon {
-  text-align: center;
-  background: #2323239c;
-  height: 15rem;
+// .card-icon {
+//   text-align: center;
+//   background: #2323239c;
+//   height: 15rem;
+// }
+
+// ul {
+//   padding: 5rem;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+// }
+
+// li {
+//   margin: 3rem;
+//   font-size: 3.6rem;
+//   font-family: "Pattaya", sans-serif;
+//   font-weight: 400;
+// }
+
+// .card-icon-li-coming {
+//   align-self: center;
+// }
+
+.card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
 }
 
-ul {
-  padding: 5rem;
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.card-imgs {
+  background-color: #232323;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-li {
-  margin: 3rem;
-  font-size: 3.6rem;
-  font-family: "Pattaya", sans-serif;
-  font-weight: 400;
-}
-
-.card-icon-li-coming {
-  align-self: center;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 932px) {
@@ -65,5 +84,11 @@ li {
   }
   li {
     font-size: 4rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

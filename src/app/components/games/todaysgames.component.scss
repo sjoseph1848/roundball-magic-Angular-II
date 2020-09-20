@@ -1,77 +1,30 @@
-.game-head {
-  background: #232323;
-  padding: 3rem;
-  min-height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.cards {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  min-height: 70vh;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .card {
+  padding: 1rem;
+  max-height: 30rem;
   flex: 1 1 30rem;
   height: 80vh;
   margin: 2rem 5rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
-.cards img {
-  max-width: 15%;
-  margin: 2rem;
-}
-
-.card h4,
-.card p {
-  padding: 1rem;
-}
-
-// .card-icon {
-//   text-align: center;
-//   background: #2323239c;
-//   height: 15rem;
-// }
-
-// ul {
-//   padding: 5rem;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-// }
-
-// li {
-//   margin: 3rem;
-//   font-size: 3.6rem;
-//   font-family: "Pattaya", sans-serif;
-//   font-weight: 400;
-// }
-
-// .card-icon-li-coming {
-//   align-self: center;
-// }
-
-.card {
-  padding: 1rem;
-  max-height: 30rem;
-}
-
 .card p {
   font-size: 2em;
+  padding: 1rem;
 }
 
 .cards {
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
+  width: 90%;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards img {
+  max-width: 15%;
+  margin: 2rem;
 }
 
 .card-imgs {

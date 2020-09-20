@@ -60,13 +60,15 @@
 // }
 
 .card {
-  background-color: dodgerblue;
-  color: white;
   padding: 1rem;
+  max-height: 30rem;
+}
+
+.card p {
+  font-size: 2em;
 }
 
 .cards {
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
@@ -78,13 +80,20 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 932px) {
-  .card-icon img {
-    height: 10rem;
-  }
-  li {
-    font-size: 4rem;
-  }
+.card-game-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-game-time {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.card-game-period {
+  display: flex;
+  justify-content: space-around;
 }
 
 @media (min-width: 600px) {

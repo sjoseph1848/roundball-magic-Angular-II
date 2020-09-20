@@ -5,39 +5,29 @@
         <img [src]="game.hTeam.logo" alt="" />
         <img [src]="game.vTeam.logo" alt="" />
       </span>
+      <div class="card-game-info" *ngIf="game.currentPeriod.charAt(0) !== '0'">
+        <p>{{ game.hTeam.nickName }}: {{ game.hTeam.score.points }}</p>
+        <p>{{ game.vTeam.nickName }}: {{ game.vTeam.score.points }}</p>
+      </div>
+      <div class="card-game-halftime" *ngIf="game.halftime === '1'">
+        <p>Half Time</p>
+      </div>
+      <div
+        class="card-game-time"
+        *ngIf="game.currentPeriod.charAt(0) === '4' && game.clock === ''"
+      >
+        <p>Final Score</p>
+      </div>
+      <div class="card-game-time" *ngIf="game.currentPeriod.charAt(0) === '0'">
+        <p>Coming Up</p>
+      </div>
+      <div
+        class="card-game-period"
+        *ngIf="game.currentPeriod.charAt(0) !== '0' && game.clock !== ''"
+      >
+        <p>Quarter: {{ game.currentPeriod | slice: 0:1 }}</p>
+        <p>Time: {{ game.clock }}</p>
+      </div>
     </div>
   </div>
-  <!-- <header class="game-head">
-    <h2>Today's Games</h2>
-  </header>
-  <div class="cards" *ngIf="games$ | async as games">
-    <div class="card" *ngFor="let game of games">
-      <div class="card-icon">
-        <img [src]="game.hTeam.logo" alt="" />
-        <img [src]="game.vTeam.logo" alt="" />
-      </div>
-      <ul>
-       
-        <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
-          {{ game.hTeam.nickName }}: {{ game.hTeam.score.points }}
-        </li>
-        <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
-          {{ game.vTeam.nickName }}: {{ game.vTeam.score.points }}
-        </li>
-        <li *ngIf="game.halftime === '1'">Half Time</li>
-        <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
-          Quarter: {{ game.currentPeriod | slice: 0:1 }}
-        </li>
-        <li *ngIf="game.currentPeriod.charAt(0) !== '0'">
-          Time: {{ game.clock }}
-        </li>
-        <li
-          class="card-icon-li-coming"
-          *ngIf="game.currentPeriod.charAt(0) === '0'"
-        >
-          Coming Up!
-        </li>
-      </ul>
-    </div>
-  </div> -->
 </section>
